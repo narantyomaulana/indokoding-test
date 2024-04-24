@@ -10,7 +10,7 @@ class ContentController extends Controller
     public function index()
     {
         $posts = Post::latest()->paginate(3);
-        return view('contentArtikel.index', compact('posts'));
+        return view('artikelContent.index', compact('posts'));
     }
 
 }
